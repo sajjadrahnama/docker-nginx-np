@@ -13,7 +13,7 @@ To run it:
 version: '3'
 services:
     web:
-        image: scr12/nnp:latest
+        image: scr12/nginx-np:latest
         ports:
             - "80:80"
         restart: always

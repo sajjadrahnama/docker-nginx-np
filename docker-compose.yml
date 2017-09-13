@@ -1,0 +1,10 @@
+version: '3'
+services:
+    web:
+        image: scr12/nginx-np:latest
+        ports:
+            - "80:80"
+        restart: always
+        volumes:
+            - hosts:/home/nginx/
+            - vhosts:/etc/nginx/vhosts.d/
